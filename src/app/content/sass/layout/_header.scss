@@ -1,0 +1,106 @@
+header {
+    .navbar {
+        padding: 0;
+        top: 16px;
+        @include media-breakpoint-up(lg) {
+            top: 47px
+        }
+        img {
+            width: 32px;
+            @include media-breakpoint-up(md) {
+                width: 59px;
+            }
+        }
+    }
+    .navbar-nav,
+    .nav {
+        gap: 20px;
+        a {
+            @include text-gradient(linear-gradient(83deg, $grey 10%, $white 90%));
+            &:hover {
+                @include text-gradient(linear-gradient(83deg, $purple 10%, $purple-100 90%));
+            }
+        }
+    }
+    .nav-item {
+        position: relative;
+        &:after {
+            content: '';
+            background: url('../images/style-images/icon-caret-right.svg') right center / 7px auto no-repeat;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            height: 12px;
+            width: 7px;
+            @include prefix(transform, translateY(-50%));
+            @include prefix(transition, 0.15s ease-in-out);
+            @include media-breakpoint-up(lg) {
+                display: none
+            }
+        }
+        &:last-child {
+            &:after {
+                display: none
+            }
+        }
+    }
+    .btn-contact {
+        @extend .purple-border-grad;
+        @extend .border-rounded-4;
+        a {
+            text-align: center;
+        }
+    }
+
+    .navbar-toggler {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        width: 32px;
+        height: 32px;
+        right: 0;
+        background: $grey-dark-100;
+        @include prefix(transform, translateY(-50%));
+        .navbar-toggler-icon {
+            background: url('../images/style-images/icon-hamburger.svg') center center / 20px auto no-repeat;
+            left: 50%;
+            top: 50%;
+            position: relative;
+            @include prefix(transform, translate(-50%,-50%));
+        }
+        &[aria-expanded="true"] {
+            background: none;
+            .navbar-toggler-icon {
+                background: url('../images/style-images/icon-close.svg') center center / 20px auto no-repeat;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        width: calc(100% - 24px);
+        top: 0;
+        left: 0;
+        z-index: 1;
+        margin-left: 24px;
+        right: 0;
+        overflow: hidden;
+
+        .navbar-nav {
+            height: 100vh !important;
+            padding: 65px 24px;
+            width: 100%;
+            @extend %purple-bg-grad3;
+            backdrop-filter: blur(10px) brightness(115%);
+        }
+        .btn-contact {
+            position: absolute;
+            bottom: 56px;
+            width: 100%;
+            left: 50%;
+            max-width: 303px;
+            margin: 0 auto;
+            @include prefix(transform, translateX(-50%));
+        }
+    }
+}
