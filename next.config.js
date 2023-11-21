@@ -1,8 +1,10 @@
-/** @type {import('next').NextConfig} */
-const path = require("path");
-
-const nextConfig = {
-
+/**  @type {import('next').NextConfig} */
+module.exports = {
+  experimental: {
+    appDir: true,
+    optimizeFonts: true,
+  },
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
 };
-
-module.exports = nextConfig;
