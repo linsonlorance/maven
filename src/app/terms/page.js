@@ -1,7 +1,11 @@
+import Link from "next/link";
 import mavenlogo from "../content/images/content-images/logo-maven.svg";
+import followfb from "../content/images/style-images/icon-facebook.svg";
+import followinsta from "../content/images/style-images/icon-instagram.svg";
+import followtwitter from "../content/images/style-images/icon-twitter.svg";
 export default function TermsandCon() {
   return (
-    <div className="landing-page">
+    <div className="policy-page">
       {/* Header section starts */}
       <header>
         <nav
@@ -12,41 +16,41 @@ export default function TermsandCon() {
           <div className="container">
             <div className="row w-100 position-relative mx-auto">
               <div className="col-12 col-md-3 p-0">
-                <a className="navbar-brand" href="#home">
+                <Link className="navbar-brand" href="/#home">
                   <img
                     src={mavenlogo.src}
                     alt="Maven Logo"
                     width={59}
                     height={59}
                   />
-                </a>
+                </Link>
               </div>
               <div className="col-12 col-md-9 p-0 d-none d-lg-block">
                 <ul className="nav align-items-center justify-content-end h-100">
                   <li className="nav-item">
-                    <a className="nav-link" href="#home">
+                    <Link className="nav-link" href="/#home">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#how">
+                    <Link className="nav-link" href="#how">
                       How it works
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#features">
-                      Features
+                      Maven approved matches
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#testimonials">
-                      Testimonials
+                      Team Insight
                     </a>
-                  </li>
+                  </li>{" "}
                   <li className="nav-item purple-border-grad border-rounded-4">
-                    <a className="nav-link" href="#contact">
+                    <Link className="nav-link" href="#contact">
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -64,29 +68,19 @@ export default function TermsandCon() {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-auto h-100">
                   <li className="nav-item">
-                    <a className="nav-link" href="#home">
+                    <Link className="nav-link" href="/#home">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#how">
+                    <Link className="nav-link" href="/#how">
                       How it works
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#features">
-                      Features
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#testimonials">
-                      Testimonials
-                    </a>
-                  </li>
+                    </Link>
+                  </li>{" "}
                   <li className="nav-item btn-contact">
-                    <a className="nav-link" href="#contact">
+                    <Link className="nav-link" href="#contact">
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -97,28 +91,22 @@ export default function TermsandCon() {
       {/* Header section ends */}
       <main>
         {/* Banner slider section */}
-        <section className="how-it-works-section bg-purple-dark-grad" id="how">
-          <div className="container">
+        <section className="policy-page-section" id="terms-condition">
+          <div className="container bg-white p-5 mb-5">
             <div>
-              <h3>Terms and Conditions</h3>
+              <h1>Terms and Conditions</h1>
 
               <p>Terms of Use</p>
-              <p>
-                <br />
-              </p>
+              <p></p>
               <p>Last revised on November 1st, 2023</p>
-              <p>
-                <br />
-              </p>
+              <p></p>
               <p>
                 Welcome to Maven Match, operated by Match Group, LLC (“us,”
                 “we,” the “Company” or “Maven Match”). Together you and Maven
                 Match may be referred to as the “Parties” or separately as
                 “Party.”
               </p>
-              <p>
-                <br />
-              </p>
+              <p></p>
               <p>
                 Notice to California subscribers: You may cancel your
                 subscription, without penalty or obligation, at any time prior
@@ -129,9 +117,7 @@ export default function TermsandCon() {
                 subscribed using your Google Play Store account or through Maven
                 Match Online, contact customer support
               </p>
-              <p>
-                <br />
-              </p>
+              <p></p>
               <ol id="l1">
                 <li data-list-text={1}>
                   <p>1. Acceptance of Terms of Use Agreement.</p>
@@ -149,9 +135,7 @@ export default function TermsandCon() {
                     all of the terms of this Agreement, you should not access or
                     use the Service.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     PLEASE CAREFULLY REVIEW THE DISPUTE RESOLUTION PROVISIONS IN
                     SECTION 15 BELOW. THESE GOVERN THE MANNER IN WHICH CLAIMS
@@ -166,9 +150,7 @@ export default function TermsandCon() {
                     ARBITRATION, THERE IS TYPICALLY LESS DISCOVERY AND APPELLATE
                     REVIEW THAN IN COURT.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     We may make changes to this Agreement and to the Service
                     from time to time. We may do this for a variety of reasons
@@ -199,13 +181,9 @@ export default function TermsandCon() {
                     Maven Match and use the Service. By creating an account and
                     using the Service, you represent and warrant that:
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>you can form a binding contract with Maven Match,</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     you are not a person who is barred from using the Service
                     under the laws of the United States or any other applicable
@@ -213,9 +191,7 @@ export default function TermsandCon() {
                     Treasury Department’s list of Specially Designated Nationals
                     or face any other similar prohibition),
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     you will comply with this Agreement and all applicable
                     local, state, national and international laws, rules and
@@ -223,9 +199,7 @@ export default function TermsandCon() {
                     intellectual property laws, anti-spam laws, and regulatory
                     requirements,
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     you have not committed, been convicted of, or pled no
                     contest to a felony, a sex crime, or any crime involving
@@ -238,9 +212,7 @@ export default function TermsandCon() {
                     that you are not required to register as a sex offender with
                     any state, federal or local sex offender registry,
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     you will use the latest version of the Service (via app or
                     website), you do not have more than one account on the
@@ -251,18 +223,14 @@ export default function TermsandCon() {
                     unless you have our express written permission to create a
                     new account.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     If at any time you cease to meet these requirements, all
                     authorization to access our Service or systems is
                     automatically revoked, and you must immediately delete your
                     account.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={3}>
                   <p>3. Your Account.</p>
@@ -274,12 +242,17 @@ export default function TermsandCon() {
                     information, including but not limited to your public
                     Facebook profile. For more information regarding the
                     information we collect from you and how we use it, please
-                    consult our Privacy Policy.{" "}
-                    <span className="h1">[MAKE LINK TO PRIVACY POLICY]</span>
+                    consult our{" "}
+                    <Link
+                      target="_blank"
+                      href="/privacy"
+                      rel="noopener noreferrer"
+                    >
+                      Privacy Policy
+                    </Link>
+                    .{" "}
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     You are responsible for maintaining the confidentiality of
                     your login credentials you use to sign up for Maven Match,
@@ -287,9 +260,7 @@ export default function TermsandCon() {
                     under those credentials. If you think someone has gained
                     access to your account, please immediately contact us.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={4}>
                   <p>4. Modifying the Service and Termination.</p>
@@ -305,9 +276,7 @@ export default function TermsandCon() {
                     unless extenuating circumstances, such as safety or security
                     concerns, prevent us from doing so.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     You may terminate your account at any time, for any reason,
                     by following the instructions in “Settings” in the Service.
@@ -316,9 +285,7 @@ export default function TermsandCon() {
                     Google Play Store, you will need to manage in app purchases
                     through such an account to avoid additional billing.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Maven Match may terminate your account at any time without
                     notice if it believes that you have violated this Agreement.
@@ -328,9 +295,7 @@ export default function TermsandCon() {
                     provisions will still apply to you and Maven Match: Section
                     4, Section 5, and Sections 12 through 19.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={5}>
                   <p>5. Safety; Your Interactions with Other Members.</p>
@@ -352,9 +317,7 @@ export default function TermsandCon() {
                     example, your credit card or bank account information), or
                     wire or otherwise send money to other members.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     YOU ARE SOLELY RESPONSIBLE FOR YOUR INTERACTIONS WITH OTHER
                     MEMBERS. YOU UNDERSTAND THAT Maven Match DOES NOT CONDUCT
@@ -369,9 +332,7 @@ export default function TermsandCon() {
                     CONSUMER REPORTING AGENCY, AND YOU AGREE THAT ANY
                     INFORMATION YOU PROVIDE MAY BE USED FOR THAT PURPOSE.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={6}>
                   <p>6. Rights Maven Match Grants You:</p>
@@ -385,16 +346,12 @@ export default function TermsandCon() {
                     authorization to access the Service are automatically
                     revoked in the event that you do any of the following:
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     use the Service or any content contained in the Service for
                     any commercial purposes without our written consent.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     copy, modify, transmit, create any derivative works from,
                     make use of, or reproduce in any way any copyrighted
@@ -403,16 +360,12 @@ export default function TermsandCon() {
                     information accessible through the Service without Maven
                     Match’s prior written consent.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     express or imply that any statements you make are endorsed
                     by Maven Match.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     use any robot, bot, spider, crawler, scraper, site
                     search/retrieval application, proxy or other manual or
@@ -421,64 +374,48 @@ export default function TermsandCon() {
                     the navigational structure or presentation of the Service or
                     its contents.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     use the Service in any way that could interfere with,
                     disrupt or negatively affect the Service or the servers or
                     networks connected to the Service.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     upload viruses or other malicious code or otherwise
                     compromise the security of the Service.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     forge headers or otherwise manipulate identifiers in order
                     to disguise the origin of any information transmitted to or
                     through the Service.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     “frame” or “mirror” any part of the Service without Maven
                     Match’s prior written authorization.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     use meta tags or code or other devices containing any
                     reference to Maven Match or the Service (or any trademark,
                     trade name, service mark, logo or slogan of Maven Match) to
                     direct any person to any other website for any purpose.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     modify, adapt, sublicense, translate, sell, reverse
                     engineer, decipher, decompile or otherwise disassemble any
                     portion of the Service, or cause others to do so.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     use or develop any third-party applications that interact
                     with the Service or other members’ Content or information
                     without our written consent.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     use, access, or publish the Maven Match application
                     programming interface without our written consent.
@@ -493,18 +430,14 @@ export default function TermsandCon() {
                     action in response to illegal and / or unauthorized uses of
                     the Service, including termination of your account.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Any software that we provide you may automatically download
                     and install upgrades, updates, or other new features. You
                     may be able to adjust these automatic downloads through your
                     device’s settings.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={7}>
                   <p>7. Rights you Grant Maven Match:</p>
@@ -545,9 +478,7 @@ export default function TermsandCon() {
                     individuals who may receive shared Content from other Maven
                     Match members).
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     You agree that all information that you submit upon creation
                     of your account, including information submitted from your
@@ -555,9 +486,7 @@ export default function TermsandCon() {
                     right to post the Content on the Service and grant the
                     license to Maven Match above.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     You understand and agree that we may monitor or review any
                     Content you post as part of the Service. We may delete any
@@ -573,9 +502,7 @@ export default function TermsandCon() {
                     offensive, we reserve the right to immediately terminate
                     your account.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     In consideration for Maven Match allowing you to use the
                     Service, you agree that we, our affiliates, and our
@@ -585,9 +512,7 @@ export default function TermsandCon() {
                     and share such feedback for any purpose without compensating
                     you.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     You agree that Maven Match may access, store, and disclose
                     your account information and Content if required to do so by
@@ -600,70 +525,52 @@ export default function TermsandCon() {
                     service; or (v) protect the rights, property or personal
                     safety of the Company or any other person.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={8}>
                   <p>8. Community Rules.</p>
                   <p>By using the Service, you agree that you will not:</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     use the Service for any purpose that is illegal or
                     prohibited by this Agreement. use the Service for any
                     harmful or nefarious purpose.
                   </p>
                   <p>use the Service in order to damage Maven Match.</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     violate our Community Guidelines, as updated from time to
                     time.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     spam or solicit money or other items of value from another
                     member, whether as a gift, loan, or other form of
                     compensation, or otherwise defraud any members.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     impersonate any person or entity or post any images of
                     another person without his or her permission.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     bully, “stalk,” intimidate, assault, harass, mistreat or
                     defame, or otherwise mistreat any person.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     post any Content that violates or infringes anyone’s rights,
                     including rights of publicity, privacy, copyright, trademark
                     or other intellectual property or contract right.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     post any Content that is hate speech, threatening, sexually
                     explicit or pornographic; incites violence; or contains
                     nudity or graphic or gratuitous violence.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     post any Content that promotes racism, bigotry, hatred or
                     physical harm of any kind against any group or individual.
@@ -674,31 +581,23 @@ export default function TermsandCon() {
                     users or disseminate another person’s personal information
                     without his or her permission.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     use another user’s account, share an account with another
                     user, or maintain more than one account.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     misrepresent your identity, age, current or previous
                     positions, qualifications, or affiliations with a person or
                     entity.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     create another account if we have already terminated your
                     account, unless you have our permission.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Maven Match reserves the right to investigate and/or
                     terminate your account without a refund of any purchases if
@@ -711,9 +610,7 @@ export default function TermsandCon() {
                     rules or our Community Guidelines, your authorization to use
                     the Service will be automatically revoked.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={9}>
                   <p>9. Other Members’ Content.</p>
@@ -726,9 +623,7 @@ export default function TermsandCon() {
                     violates this Agreement, please report it within the Service
                     or via our contact form.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={10}>
                   <p>10. Purchases.</p>
@@ -748,9 +643,7 @@ export default function TermsandCon() {
                     you authorize Maven Match or the third party account, as
                     applicable, to charge you.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Auto-Renewal. If you purchase an auto-recurring periodic
                     subscription through an in app purchase, your Payment Method
@@ -765,9 +658,7 @@ export default function TermsandCon() {
                     information will be stored and subsequently used for the
                     automatic card payments in accordance with the Agreement.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     If you do not wish your subscription to renew automatically,
                     or if you want to change or terminate your subscription, you
@@ -786,9 +677,7 @@ export default function TermsandCon() {
                     then-current subscription term, and your subscription will
                     not be renewed after your then-current term expires.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Additional Terms that apply if you pay Maven Match directly
                     with your Payment Method. If you pay Maven Match directly,
@@ -798,9 +687,7 @@ export default function TermsandCon() {
                     payment made with your Payment Method, Maven Match may
                     terminate your account immediately in its sole discretion.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     You may edit your Payment Method information by visiting
                     Maven Match and going to Settings. If a payment is not
@@ -818,9 +705,7 @@ export default function TermsandCon() {
                     you and the financial institution, credit card issuer or
                     other provider of your chosen Payment Method.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Virtual Items. From time to time, you may be able to
                     purchase, earn, or be granted a limited, personal,
@@ -861,9 +746,7 @@ export default function TermsandCon() {
                     COMPENSATION FOR UNUSED VIRTUAL ITEMS WHEN AN ACCOUNT IS
                     CLOSED, WHETHER SUCH CLOSURE WAS VOLUNTARY OR INVOLUNTARY.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Refunds. Generally, all charges for purchases are
                     nonrefundable, and there are no refunds or credits for
@@ -872,17 +755,13 @@ export default function TermsandCon() {
                     days of the transaction date, or if the laws applicable in
                     your jurisdiction provide for refunds.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     For subscribers residing in Arizona, California, Colorado,
                     Connecticut, Illinois, Iowa, Minnesota, New York, North
                     Carolina, Ohio and Wisconsin, the terms below apply:
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     You may cancel your subscription, without penalty or
                     obligation, at any time prior to midnight of the third
@@ -900,13 +779,9 @@ export default function TermsandCon() {
                     refund as described below. Purchases of Virtual Items are
                     FINAL AND NON-REFUNDABLE.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>To request a refund:</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     If you made a purchase using your Apple ID, refunds are
                     handled by Apple, not Maven Match. To request a refund, go
@@ -914,9 +789,7 @@ export default function TermsandCon() {
                     history,” find the transaction and hit “Report Problem”. You
                     can also submit a request at https://getsupport.apple.com.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     If you subscribed using your Google Play Store account or
                     through Maven Match directly: please contact customer
@@ -939,9 +812,7 @@ export default function TermsandCon() {
                     of subscription, bundle size and more. We also regularly
                     test new features and payment options.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={11}>
                   <p>
@@ -954,77 +825,57 @@ export default function TermsandCon() {
                     infringement, please submit a takedown request using the
                     form here.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     If you contact us regarding alleged copyright infringement,
                     please be sure to include the following information:
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     an electronic or physical signature of the person authorized
                     to act on behalf of the owner of the copyright interest;
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     a description of the copyrighted work that you claim has
                     been infringed;
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     a description of where the material that you claim is
                     infringing is located on the Service (and such description
                     must be reasonably sufficient to enable us to find the
                     alleged infringing material);
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     your contact information, including address, telephone
                     number and email address, and the copyright owner’s
                     identity;
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     a written statement by you that you have a good faith belief
                     that the disputed use is not authorized by the copyright
                     owner, its agent, or the law; and
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     a statement by you, made under penalty of perjury, that the
                     above information in your notice is accurate and that you
                     are the copyright owner or authorized to act on the
                     copyright owner’s behalf.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Maven Match will terminate the accounts of repeat
                     infringers.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={12}>
                   <p>12. Disclaimers.</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Maven Match PROVIDES THE SERVICE ON AN “AS IS” AND “AS
                     AVAILABLE” BASIS AND TO THE EXTENT PERMITTED BY APPLICABLE
@@ -1042,9 +893,7 @@ export default function TermsandCon() {
                     INFORMATION YOU OBTAIN ON OR THROUGH THE SERVICE WILL BE
                     ACCURATE, OR APPROPRIATE FOR YOUR PURPOSES.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Maven Match ASSUMES NO RESPONSIBILITY FOR ANY CONTENT THAT
                     YOU OR ANOTHER MEMBER OR THIRD PARTY POSTS, SENDS OR
@@ -1052,16 +901,12 @@ export default function TermsandCon() {
                     OTHERWISE OBTAINED THROUGH THE USE OF THE SERVICE IS
                     ACCESSED AT YOUR OWN DISCRETION AND RISK.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Maven Match DISCLAIMS AND ASSUMES NO RESPONSIBILITY FOR ANY
                     CONDUCT OF YOU OR ANY OTHER MEMBER, ON OR OFF THE SERVICE.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={13}>
                   <p>13. Third Party Services.</p>
@@ -1076,9 +921,7 @@ export default function TermsandCon() {
                     Match is not responsible or liable for such third parties’
                     terms or actions.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={14}>
                   <p>14. Limitation of Liability.</p>
@@ -1119,17 +962,13 @@ export default function TermsandCon() {
                     SECTION 14 SHALL APPLY EVEN IF YOUR REMEDIES UNDER THIS
                     AGREEMENT FAIL WITH RESPECT TO THEIR ESSENTIAL PURPOSE.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION
                     OF CERTAIN DAMAGES, SO SOME OR ALL OF THE EXCLUSIONS AND
                     LIMITATIONS IN THIS SECTION MAY NOT APPLY TO YOU.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={15}>
                   <p>15. Dispute Resolution Section</p>
@@ -1138,21 +977,15 @@ export default function TermsandCon() {
                     how the Parties agree to proceed, except where prohibited by
                     applicable law.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Any Subsection in this Dispute Resolution Section that is
                     prohibited by law shall not apply to the users residing in
                     that jurisdiction.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>15a. INFORMAL DISPUTE RESOLUTION PROCESS</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     If you are dissatisfied with our Service for any reason,
                     please contact Maven Match Customer Service first so we can
@@ -1164,9 +997,7 @@ export default function TermsandCon() {
                     include our affiliates, employees, licensors, and service
                     providers.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Maven Match values its relationship with you and appreciates
                     the mutual benefit realized from informally resolving
@@ -1174,18 +1005,12 @@ export default function TermsandCon() {
                     Dispute in arbitration or small claims court, you agree to
                     first send a detailed notice (“Notice”) to:
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>Maven Match Legal Maven Match LLC</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>Maven Match</p>
                   <p>33180 N Lake Shore Dr Grayslake, IL 60030 United States</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     If Maven Match has a Dispute with you, Maven Match agrees to
                     first send a Notice to you at your most recent email address
@@ -1223,9 +1048,7 @@ export default function TermsandCon() {
                     initiate an arbitration (subject to a Party’s right to elect
                     small claims court as provided below).
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Completion of this informal dispute resolution is a
                     condition precedent to filing any demand for arbitration or
@@ -1244,15 +1067,11 @@ export default function TermsandCon() {
                     provision and to enjoin any arbitration proceeding or small
                     claims court action.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     15b. INDIVIDUAL RELIEF: CLASS ACTION AND JURY TRIAL WAIVER
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     TO THE FULLEST EXTENT ALLOWABLE BY LAW, YOU AND Maven Match
                     EACH WAIVE THE RIGHT TO A JURY TRIAL AND THE RIGHT TO
@@ -1291,16 +1110,12 @@ export default function TermsandCon() {
                     AND VOID. THIS PARAGRAPH IS AN ESSENTIAL PART OF THIS
                     ARBITRATION AGREEMENT.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     15c. DISPUTE RESOLUTION THROUGH ARBITRATION OR SMALL CLAIMS
                     COURT
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Any dispute, claim, or controversy between you and Maven
                     Match (that is not resolved informally by Maven Match
@@ -1336,9 +1151,7 @@ export default function TermsandCon() {
                     considered or deemed binding with respect to Maven Match’s
                     other contracting parties.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Any court proceeding to enforce this Dispute Resolution
                     Section 15, including any proceeding to confirm, modify, or
@@ -1358,11 +1171,9 @@ export default function TermsandCon() {
                   <p>
                     15d. INDIVIDUAL ARBITRATION AND MASS ARBITRATION PROTOCOLS
                   </p>
+                  <p></p>
                   <p>
-                    <br />
-                  </p>
-                  <p>
-                    <a
+                    <Link
                       href="http://www.namadr.com/resources/rules-fees-forms"
                       className="a"
                       target="_blank"
@@ -1378,8 +1189,8 @@ export default function TermsandCon() {
                       demand for arbitration is filed with NAM, as modified by
                       this Dispute Resolution Section 15. For a copy of the NAM
                       Rules, please visit https://
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="mailto:commercial@namadr.com"
                       className="a"
                       target="_blank"
@@ -1387,7 +1198,7 @@ export default function TermsandCon() {
                       www.namadr.com/resources/rules-fees-forms or contact NAM’s
                       National Processing Center at 990 Stewart Avenue, 1st
                       Floor, Garden City, NY 11530 and email address{" "}
-                    </a>
+                    </Link>
                     commercial@namadr.com. If NAM is unable or unwilling to
                     perform its duties under this Agreement, the Parties shall
                     mutually agree on an alternative administrator that will
@@ -1397,17 +1208,13 @@ export default function TermsandCon() {
                     administrator that will assume NAM’s duties under this
                     Agreement.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     The Parties agree that the following procedures will apply
                     to any Arbitrations initiated under this Dispute Resolution
                     Section:
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Commencing an Arbitration – To initiate an arbitration, you
                     or Maven Match shall send to NAM a demand for arbitration
@@ -1417,18 +1224,12 @@ export default function TermsandCon() {
                     Demand for Arbitration, you shall also send it to Maven
                     Match at:
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>Maven Match Legal Maven Match LLC</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>Maven Match</p>
                   <p>33180 N Lake Shore Dr Grayslake, IL 60030 United States</p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     within 10 days of delivery of the Demand for Arbitration to
                     NAM. If Maven Match sends a Demand for Arbitration, we will
@@ -1443,9 +1244,7 @@ export default function TermsandCon() {
                     requirements of Dispute Resolution Section 15 or if either
                     Party elects small claims court as set forth above.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Fees – The payment of all fees shall be governed by the NAM
                     Rules, except to the extent that the case is a part of a
@@ -1468,9 +1267,7 @@ export default function TermsandCon() {
                     of disputes. If Maven Match initiates an arbitration against
                     you, we shall pay all fees.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     The Arbitrator – The arbitration shall be conducted by a
                     single, neutral arbitrator (the “Claim Arbitrator”), as
@@ -1493,9 +1290,7 @@ export default function TermsandCon() {
                     Term, the Arbitrator shall select a term that comes closest
                     to expressing the intention of the Unfair Term.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Dispositive Motions – The Parties agree that the Claim
                     Arbitrator shall have the authority to consider dispositive
@@ -1508,9 +1303,7 @@ export default function TermsandCon() {
                     dispositive motion for summary judgment based upon the
                     Parties’ pleadings and the evidence submitted.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Discovery – Each Party may (a) serve up to five requests for
                     relevant, non-privileged documents from the other Party; and
@@ -1544,9 +1337,7 @@ export default function TermsandCon() {
                     whether the requested discovery is necessary for the
                     adequate preparation of a claim or defense.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Confidentiality – Upon either Party’s request, the
                     Arbitrator will issue an order requiring that confidential
@@ -1557,9 +1348,7 @@ export default function TermsandCon() {
                     permitted court filing of confidential information must be
                     done under seal.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Arbitration Hearing – You and Maven Match are entitled to a
                     fair evidentiary hearing (i.e. trial) before the Claim
@@ -1579,9 +1368,7 @@ export default function TermsandCon() {
                     good cause, will result in a default judgment taken against
                     that Party.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Arbitration Award – Regardless of the format of the
                     arbitration, the Claim Arbitrator shall provide a reasoned
@@ -1603,9 +1390,7 @@ export default function TermsandCon() {
                     brought for an improper purpose, for the purpose of
                     harassment, or in bad faith.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     Offer of Settlement – The Respondent may, but is not
                     obligated to, make a written settlement offer to the
@@ -1626,7 +1411,7 @@ export default function TermsandCon() {
                     under which it is suing.
                   </p>
                   <p>
-                    <a
+                    <Link
                       href="http://www.namadr.com/resources/rules-fees-forms/)"
                       className="a"
                       target="_blank"
@@ -1639,13 +1424,11 @@ export default function TermsandCon() {
                       Filing Supplemental Dispute Resolution Rules and
                       Procedures (“NAM’s Mass Filing Rules”, available at
                       https://
-                    </a>
+                    </Link>
                     www.namadr.com/resources/rules-fees-forms/), the additional
                     protocols set forth below shall apply.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <ol id="l2">
                     <li data-list-text="i.">
                       <p>
@@ -1660,9 +1443,7 @@ export default function TermsandCon() {
                         first cases are chosen to proceed until your case is
                         chosen for a bellwether proceeding.
                       </p>
-                      <p>
-                        <br />
-                      </p>
+                      <p></p>
                     </li>
                     <li data-list-text="ii.">
                       <p>
@@ -1674,9 +1455,7 @@ export default function TermsandCon() {
                         Maven Match in writing and submitted to NAM and all
                         Parties.
                       </p>
-                      <p>
-                        <br />
-                      </p>
+                      <p></p>
                     </li>
                     <li data-list-text="iii.">
                       <p>
@@ -1730,9 +1509,7 @@ export default function TermsandCon() {
                         Agreement shall have the power to enforce this
                         subsection.
                       </p>
-                      <p>
-                        <br />
-                      </p>
+                      <p></p>
                     </li>
                     <li data-list-text="iv.">
                       <p>
@@ -1749,15 +1526,11 @@ export default function TermsandCon() {
                       </p>
                     </li>
                   </ol>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>15e. FUTURE CHANGES AND RETROACTIVE APPLICATION</p>
+                  <p></p>
                   <p>
-                    <br />
-                  </p>
-                  <p>
-                    <a
+                    <Link
                       href="mailto:Matchoptout@match.com"
                       className="a"
                       target="_blank"
@@ -1775,20 +1548,20 @@ export default function TermsandCon() {
                       Agreement. You may opt out by sending us written notice,
                       within 30 days of the time you consent to this Agreement,
                       to the following email address: Maven{" "}
-                    </a>
-                    <a href="mailto:Matchoptout@match.com" target="_blank">
+                    </Link>
+                    <Link href="mailto:Matchoptout@match.com" target="_blank">
                       Matchoptout@match.com.
-                    </a>
+                    </Link>
                   </p>
                   <p>
-                    <a
+                    <Link
                       href="mailto:Matchoptout@match.com"
                       className="a"
                       target="_blank"
                     >
                       Please do not direct any customer support inquiries to
                       Maven{" "}
-                    </a>
+                    </Link>
                     Matchoptout@match.com, as they will not be addressed; such
                     inquiries should be directed to customer support. You must
                     include information sufficient to identify your account(s),
@@ -1809,9 +1582,7 @@ export default function TermsandCon() {
                     consent to this Agreement in accordance with this Dispute
                     Resolution Section.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={16}>
                   <p>16. Governing Law.</p>
@@ -1819,9 +1590,7 @@ export default function TermsandCon() {
                     Illinois law and the Federal Arbitration Act will apply to
                     any Dispute (except where prohibited by law).
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                   <p>
                     To the fullest extent allowable by law, the laws of
                     Illinois, U.S.A., without regard to its conflict of laws
@@ -1831,9 +1600,7 @@ export default function TermsandCon() {
                     Resolution Process set forth in Section 15 above shall be
                     governed by the Federal Arbitration Act.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={17}>
                   <p>17. Venue/Forum Selection.</p>
@@ -1856,9 +1623,7 @@ export default function TermsandCon() {
                     Illinois and waive any claim that such courts constitute an
                     inconvenient forum.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={18}>
                   <p>18. Indemnity by You.</p>
@@ -1873,9 +1638,7 @@ export default function TermsandCon() {
                     use of the Service, your Content, or your breach of this
                     Agreement.
                   </p>
-                  <p>
-                    <br />
-                  </p>
+                  <p></p>
                 </li>
                 <li data-list-text={19}>
                   <p>19. Entire Agreement; Other.</p>
@@ -1938,16 +1701,16 @@ export default function TermsandCon() {
                   <div className="card-body">
                     <ul>
                       <li>
-                        <a href="#home">Home</a>
+                        <Link href="/#home">Home</Link>
                       </li>
                       <li>
-                        <a href="#how">How it works</a>
+                        <Link href="/#how">How it works</Link>
                       </li>
                       <li>
-                        <a href="#matches">Maven approved matches</a>
+                        <Link href="/#features">Maven approved matches</Link>
                       </li>
                       <li>
-                        <a href="#more">Note from team</a>
+                        <Link href="/#testimonials">Note from team</Link>
                       </li>
                     </ul>
                   </div>
@@ -1976,13 +1739,13 @@ export default function TermsandCon() {
                   <div className="card-body">
                     <ul>
                       <li>
-                        <a href="#">FAQ</a>
+                        <Link href="#">FAQ</Link>
                       </li>
                       <li>
-                        <a href="#">Terms and conditions</a>
+                        <Link href="#">Terms and conditions</Link>
                       </li>
                       <li>
-                        <a href="#">Privacy policy</a>
+                        <Link href="#">Privacy policy</Link>
                       </li>
                     </ul>
                   </div>
@@ -2011,12 +1774,12 @@ export default function TermsandCon() {
                   <div className="card-body">
                     <ul>
                       <li>
-                        <a href="tel:(555) 555-1234">(555) 555-1234</a>
+                        <Link href="tel:(555) 555-1234">(555) 555-1234</Link>
                       </li>
                       <li>
-                        <a href="mailto:mavenmatch@gmail.com">
+                        <Link href="mailto:mavenmatch@gmail.com">
                           mavenmatch@gmail.com
-                        </a>
+                        </Link>
                       </li>
                       <li>4016 Doane Street, Fremont CA 94538</li>
                     </ul>
@@ -2026,14 +1789,14 @@ export default function TermsandCon() {
             </div>
             <div className="row">
               <div className="col-md-3">
-                <a className="logo-image" href="#home">
+                <Link className="logo-image" href="/#home">
                   <img
                     src={mavenlogo.src}
                     alt="Maven Logo"
                     width={56}
                     height={56}
                   />
-                </a>
+                </Link>
                 <p className="text-white">
                   Experience meaningful connections with a touch of trusted
                   matchmaking.
@@ -2043,16 +1806,16 @@ export default function TermsandCon() {
                 <h4>Services</h4>
                 <ul>
                   <li>
-                    <a href="#home">Home</a>
+                    <Link href="/#home">Home</Link>
                   </li>
                   <li>
-                    <a href="#how">How it works</a>
+                    <Link href="/#how">How it works</Link>
                   </li>
                   <li>
-                    <a href="#matches">Maven approved matches</a>
+                    <Link href="/#matches">Maven approved matches</Link>
                   </li>
                   <li>
-                    <a href="#more">Note from team</a>
+                    <Link href="/#more">Note from team</Link>
                   </li>
                 </ul>
               </div>
@@ -2060,19 +1823,25 @@ export default function TermsandCon() {
                 <h4>Quick Links</h4>
                 <ul>
                   <li>
-                    <a href="#">FAQ</a>
+                    <Link href="/">FAQ</Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       target="_blank"
-                      href="https://twitter.com/"
+                      href="/terms"
                       rel="noopener noreferrer"
                     >
                       Terms and conditions
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Privacy policy</a>
+                    <Link
+                      target="_blank"
+                      href="/privacy"
+                      rel="noopener noreferrer"
+                    >
+                      Privacy policy
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -2080,12 +1849,12 @@ export default function TermsandCon() {
                 <h4>Contact Us</h4>
                 <ul>
                   <li>
-                    <a href="tel:(555) 555-1234">(555) 555-1234</a>
+                    <Link href="tel:(555) 555-1234">(555) 555-1234</Link>
                   </li>
                   <li>
-                    <a href="mailto:mavenmatch@gmail.com">
+                    <Link href="mailto:mavenmatch@gmail.com">
                       mavenmatch@gmail.com
-                    </a>
+                    </Link>
                   </li>
                   <li>4016 Doane Street, Fremont CA 94538</li>
                 </ul>
@@ -2093,11 +1862,38 @@ export default function TermsandCon() {
             </div>
             <div className="footer-social-links">
               <p className="text-white">Follow us</p>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/0da364e0-8bbc-4ead-b765-f0ad47ca31d8?apiKey=5151ddbef91541528bdb68746c0a3d02"
-                className="img-fluid mt-1"
-              />
+              <ul class="d-flex gap-16">
+                <li>
+                  <a href="#" class="social-icon">
+                    <img
+                      src={followfb.src}
+                      alt="Facebook"
+                      width="23"
+                      height="23"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon">
+                    <img
+                      src={followinsta.src}
+                      alt="Instagram"
+                      width="23"
+                      height="23"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon">
+                    <img
+                      src={followtwitter.src}
+                      alt="Twitter"
+                      width="23"
+                      height="23"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
             <hr className="bg-purple mt-3" />
             <div className="footer-copyright text-center text-md-right mt-2">

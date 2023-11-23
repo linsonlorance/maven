@@ -1,10 +1,15 @@
-/**  @type {import('next').NextConfig} */
-module.exports = {
-  experimental: {
-    appDir: true,
-    optimizeFonts: true,
+/** @type {import('next').NextConfig} */
+const path = require("path");
+
+const nextConfig = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
-  images: {
-    formats: ["image/avif", "image/webp"],
+  webpack: (config) => {
+    config.resolve.alias["@app"] = path.resolve(__dirname, "app");
+    return config;
   },
+  output: "export",
 };
+
+module.exports = nextConfig;

@@ -16,10 +16,21 @@ $color in $text-color {
 }
 
 .purple-border-grad {
-  border: 2px solid transparent; /* Start with a transparent border */
-  background: transparent;
-  border-image: linear-gradient(83deg, $purple 38%, $purple-100 100%);
-  border-image-slice: 1;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    padding: 1px; 
+    background:linear-gradient(83deg, $purple 38%, $purple-100 100%); 
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+    z-index: -1;
+  }
 }
 
 .border-rounded-4 {
@@ -40,6 +51,10 @@ $color in $text-color {
 
 .py-140 {
   padding: 140px 0;
+}
+
+.gap-16 {
+  gap: 16px;
 }
 
 .bg-purple-dark-grad {

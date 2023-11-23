@@ -1,5 +1,9 @@
 footer {
 
+    .footer-about {
+        max-width: 195px;
+    }
+
     .logo-image img {
         width: 31px;
         margin-bottom: 15px;
@@ -89,6 +93,13 @@ footer {
             -webkit-transition-timing-function: ease; 
             -o-transition-timing-function: ease; 
             transition-timing-function: ease; 
+        }
+    }
+    .footer-social-links {
+        img {
+            @include media-breakpoint-up(lg) {
+                width: 16px;
+            }  
         }
     }
 }

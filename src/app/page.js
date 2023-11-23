@@ -13,7 +13,7 @@ import btnplay from "./content/images/style-images/btn-play.svg";
 import usercount from "./content/images/content-images/user-count.svg";
 import bannercouples from "./content/images/content-images/banner-couples-holding-hands.png";
 import bannercouplesmob from "./content/images/content-images/banner-couples-holding-hands-mobile.png";
-import connectionreqicon from "./content/images/style-images/icon-connection-requests.svg";
+import connectionhugicon from "./content/images/style-images/icon-hug-requests.svg";
 import metaicon2 from "./content/images/style-images/icon-meta2.svg";
 import expandconnecticon from "./content/images/style-images/icon-expand-connection.svg";
 import connectionreq from "./content/images/style-images/icon-connection-requests.svg";
@@ -26,7 +26,9 @@ import bannerlucymob from "./content/images/content-images/banner-lucy-mobile.pn
 import quoteicon from "./content/images/style-images/icon-quote.svg";
 import verifiedprofiles from "./content/images/content-images/banner-verified-profiles.png";
 import verifiedprofilesmob from "./content/images/content-images/banner-verified-profiles-mobile.png";
-// import mavenlogo from "./content/images/content-images/logo-maven.svg";
+import followfb from "./content/images/style-images/icon-facebook.svg";
+import followinsta from "./content/images/style-images/icon-instagram.svg";
+import followtwitter from "./content/images/style-images/icon-twitter.svg";
 // import mavenlogo from "./content/images/content-images/logo-maven.svg";
 // import mavenlogo from "./content/images/content-images/logo-maven.svg";
 
@@ -66,12 +68,12 @@ function Home() {
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#features">
-                      Features
+                      Maven approved matches
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#testimonials">
-                      Testimonials
+                      Team Insight
                     </a>
                   </li>
                   <li className="nav-item purple-border-grad border-rounded-4">
@@ -106,12 +108,12 @@ function Home() {
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#features">
-                      Features
+                      Maven approved matches
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#testimonials">
-                      Testimonials
+                      Team Insight
                     </a>
                   </li>
                   <li className="nav-item btn-contact">
@@ -130,7 +132,6 @@ function Home() {
         {/* Banner slider section */}
         <section
           className="banner-section bg-purple-dark-grad2 position-relative"
-          style={{ marginBottom: "100px" }}
           id="home"
         >
           <div className="banner-background-image position-absolute w-100 d-none d-lg-block">
@@ -165,34 +166,38 @@ function Home() {
                   </p>
                   <div className="btn-group d-flex">
                     <div className="btn-app-store">
-                      <picture>
-                        <source
-                          media="(min-width:992px)"
-                          srcSet={appstorebtndesk.src}
-                        />
-                        <source media={true} srcSet={appstorebtnmob.src} />
-                        <img
-                          src={appstorebtndesk.src}
-                          alt="App store button"
-                          width={133}
-                          height={51}
-                        />
-                      </picture>
+                      <a href="">
+                        <picture>
+                          <source
+                            media="(min-width:992px)"
+                            srcSet={appstorebtnmob.src}
+                          />
+                          <source media={true} srcSet={appstorebtnmob.src} />
+                          <img
+                            src={appstorebtnmob.src}
+                            alt="App store button"
+                            width={126}
+                            height={42}
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div className="btn-play-store">
-                      <picture>
-                        <source
-                          media="(min-width:992px)"
-                          srcSet={playstorebtn.src}
-                        />
-                        <source media="true" srcSet={playstorebtnmob.src} />
-                        <img
-                          src={playstorebtn.src}
-                          alt="Play store button"
-                          width={133}
-                          height={51}
-                        />
-                      </picture>
+                      <a href="">
+                        <picture>
+                          <source
+                            media="(min-width:992px)"
+                            srcSet={playstorebtnmob.src}
+                          />
+                          <source media="true" srcSet={playstorebtnmob.src} />
+                          <img
+                            src={playstorebtnmob.src}
+                            alt="Play store button"
+                            width={126}
+                            height={42}
+                          />
+                        </picture>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -248,18 +253,18 @@ function Home() {
         {/* How It Works section */}
         <section className="how-it-works-section bg-purple-dark-grad" id="how">
           <div className="container">
-            <div className="row">
-              <div className="col-md-6 order-md-2">
-                <h2 className="text-center text-lg-left">How It Works</h2>
-                <div className="image-text-block d-none d-md-block">
+            <div className="row justify-content-center">
+              <div className="col-xl-6 order-xl-2">
+                <h2 className="text-center text-xl-left">How It Works</h2>
+                <div className="image-text-block d-none d-lg-block">
                   <div className="row">
                     <div className="col">
                       <div className="media bg-grad-blur">
                         <div className="img-block">
                           <picture>
-                            <source srcSet={expandconnecticon.src} />
+                            <source srcSet={connectionhugicon.src} />
                             <img
-                              src={expandconnecticon.src}
+                              src={connectionhugicon.src}
                               alt="connection requests"
                               width={98}
                               height={98}
@@ -321,73 +326,79 @@ function Home() {
                 </div>
                 <div
                   id="how-it-works-carousel"
-                  className="how-it-works-carousel multicarousel carousel slide carousel-fade d-block d-md-none"
+                  className="how-it-works-carousel multicarousel carousel slide carousel-fade d-block d-lg-none pointer-event"
                   data-ride="carousel"
                 >
                   <div className="carousel-inner image-text-block">
                     <div className="carousel-item active">
-                      <div className="media bg-grad-blur">
-                        <div className="img-block">
-                          <picture>
-                            <source srcSet={connectionreq.src} />
-                            <img
-                              src={connectionreq.src}
-                              alt="connection requests"
-                              width={98}
-                              height={98}
-                            />
-                          </picture>
-                        </div>
-                        <div className="media-body">
-                          <h5>Send or accept Connection Requests</h5>
-                          <p>
-                            Send or accept connection requests to/from friends
-                            or act as a mentor
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <div className="media bg-grad-blur">
-                        <div className="img-block">
-                          <picture>
-                            <source srcSet={metaicon2} />
-                            <img
-                              src={metaicon2}
-                              alt="Meta connection"
-                              width={98}
-                              height={98}
-                            />
-                          </picture>
-                        </div>
-                        <div className="media-body">
-                          <h5>Connect: Meta, Insta and Snapchat</h5>
-                          <p>
-                            Link your Meta, Instagram or Snapchat account to
-                            connect with friends
-                          </p>
+                      <div class="bg-grad-blur">
+                        <div className="media">
+                          <div className="img-block">
+                            <picture>
+                              <source srcSet={connectionreq.src} />
+                              <img
+                                src={connectionreq.src}
+                                alt="connection requests"
+                                width={98}
+                                height={98}
+                              />
+                            </picture>
+                          </div>
+                          <div className="media-body">
+                            <h5>Send or accept Connection Requests</h5>
+                            <p>
+                              Send or accept connection requests to/from friends
+                              or act as a mentor
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div className="carousel-item">
-                      <div className="media bg-grad-blur">
-                        <div className="img-block">
-                          <picture>
-                            <source srcSet={connectionreq.src} />
-                            <img
-                              src={connectionreq.src}
-                              alt="Expand connection"
-                              width={98}
-                              height={98}
-                            />
-                          </picture>
+                      <div class="bg-grad-blur">
+                        <div className="media">
+                          <div className="img-block">
+                            <picture>
+                              <source srcSet={metaicon2} />
+                              <img
+                                src={metaicon2}
+                                alt="Meta connection"
+                                width={98}
+                                height={98}
+                              />
+                            </picture>
+                          </div>
+                          <div className="media-body">
+                            <h5>Connect: Meta, Insta and Snapchat</h5>
+                            <p>
+                              Link your Meta, Instagram or Snapchat account to
+                              connect with friends
+                            </p>
+                          </div>
                         </div>
-                        <div className="media-body">
-                          <h5>Expand, Explore, Thrive and Connect</h5>
-                          <p>
-                            Discover mutual interests and expand your social
-                            circle within the app
-                          </p>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <div class="bg-grad-blur">
+                        <div className="media">
+                          <div className="img-block">
+                            <picture>
+                              <source srcSet={connectionreq.src} />
+                              <img
+                                src={connectionreq.src}
+                                alt="Expand connection"
+                                width={98}
+                                height={98}
+                              />
+                            </picture>
+                          </div>
+                          <div className="media-body">
+                            <h5>Expand, Explore, Thrive and Connect</h5>
+                            <p>
+                              Discover mutual interests and expand your social
+                              circle within the app
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -411,20 +422,22 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 order-md-1">
-                <picture>
-                  <source
-                    media="(min-width:992px)"
-                    srcSet={bannerappinterface.src}
-                  />
-                  <source srcSet={bannerappinterface.src} />
-                  <img
-                    src={bannerappinterface.src}
-                    alt="Maven app interface"
-                    width={591}
-                    height={719}
-                  />
-                </picture>
+              <div className="col-xl-6 order-xl-1">
+                <div class="banner-image">
+                  <picture>
+                    <source
+                      media="(min-width:992px)"
+                      srcSet={bannerappinterface.src}
+                    />
+                    <source srcSet={bannerappinterface.src} />
+                    <img
+                      src={bannerappinterface.src}
+                      alt="Maven app interface"
+                      width={591}
+                      height={719}
+                    />
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -432,14 +445,15 @@ function Home() {
         {/* Maven Approved Matches section */}
         <section
           className="approved-matches-section bg-purple-dark-grad2"
-          id="matches"
+          id="features"
         >
           <div className="container">
             <div className="section-heading text-center">
               <h2>Maven Approved Matches</h2>
-              <p>
-                The devastating and wide-ranging impact of ALS on people's lives
-                is often not well known by the public.
+              <p style={{ paddingTop: "20px" }}>
+                Unlock the power of trusted connections as our Mavens create
+                meaningful matches, connecting you with their trusted friends
+                for exciting new connections
               </p>
             </div>
             <div className="banner-image">
@@ -462,9 +476,9 @@ function Home() {
         {/* Verified Profiles section */}
         <section className="verified-profiles-section bg-purple-dark-grad">
           <div className="container position-relative">
-            <div className="section-heading text-md-left">
+            <div className="section-heading text-md-left text-center">
               <h2>Only Real Verified Profiles Are Allowed To Join</h2>
-              <p className="d-md-none">
+              <p className="d-md-none" style={{ padding: "10px" }}>
                 Unlock the power of trusted connections as our Mavens create
                 meaningful matches, connecting you with their trusted friends
                 for exciting new connections
@@ -491,7 +505,7 @@ function Home() {
                 />
               </picture>
             </div>
-            <div className="box-layout bg-grey-dark" id="more">
+            <div className="box-layout bg-grey-dark" id="testimonials">
               <div className="box-layout-heading text-center">
                 <h3>A Note from Our Team</h3>
                 <p>
@@ -533,7 +547,8 @@ function Home() {
                       Lorem ipsum dolor sit amet consectetur. Non magna semper
                       eu orci. Egestas lectus egestas tortor quisque eget ac
                       diam commodo. Ut diam mi ipsum ut volutpat iaculis dolor
-                      diam.
+                      diam. Sed proin cursus aliquam interdum varius auctor.
+                      Lorem ipsum dolor sit amet consectetur.
                     </p>
                   </div>
                   <div className="team-info d-flex flex-md-column">
@@ -678,7 +693,7 @@ function Home() {
                     height={56}
                   />
                 </a>
-                <p className="text-white">
+                <p className="text-white footer-about">
                   Experience meaningful connections with a touch of trusted
                   matchmaking.
                 </p>
@@ -707,16 +722,18 @@ function Home() {
                     <a href="#">FAQ</a>
                   </li>
                   <li>
-                    <a
-                      target="_blank"
-                      href="https://twitter.com/"
-                      rel="noopener noreferrer"
-                    >
+                    <a target="_blank" href="/terms" rel="noopener noreferrer">
                       Terms and conditions
                     </a>
                   </li>
                   <li>
-                    <a href="#">Privacy policy</a>
+                    <a
+                      target="_blank"
+                      href="/privacy"
+                      rel="noopener noreferrer"
+                    >
+                      Privacy policy
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -737,11 +754,38 @@ function Home() {
             </div>
             <div className="footer-social-links">
               <p className="text-white">Follow us</p>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/0da364e0-8bbc-4ead-b765-f0ad47ca31d8?apiKey=5151ddbef91541528bdb68746c0a3d02"
-                className="img-fluid mt-1"
-              />
+              <ul class="d-flex gap-16">
+                <li>
+                  <a href="#" class="social-icon">
+                    <img
+                      src={followfb.src}
+                      alt="Facebook"
+                      width="23"
+                      height="23"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon">
+                    <img
+                      src={followinsta.src}
+                      alt="Instagram"
+                      width="23"
+                      height="23"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon">
+                    <img
+                      src={followtwitter.src}
+                      alt="Twitter"
+                      width="23"
+                      height="23"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
             <hr className="bg-purple mt-3" />
             <div className="footer-copyright text-center text-md-right mt-2">

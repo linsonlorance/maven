@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <script></script>
+        <script src="./cotent/scripts/script.js"></script>
       </Head>
       <body>
         {children}
