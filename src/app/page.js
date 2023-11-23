@@ -102,22 +102,22 @@ function Home() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#how">
+                    <a className="nav-link" href="#">
                       How it works
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#features">
+                    <a className="nav-link" href="#">
                       Maven approved matches
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#testimonials">
+                    <a className="nav-link" href="#">
                       Team Insight
                     </a>
                   </li>
                   <li className="nav-item btn-contact">
-                    <a className="nav-link" href="#contact">
+                    <a className="nav-link" href="#">
                       Contact Us
                     </a>
                   </li>
@@ -335,9 +335,9 @@ function Home() {
                         <div className="media">
                           <div className="img-block">
                             <picture>
-                              <source srcSet={connectionreq.src} />
+                              <source srcSet={connectionhugicon.src} />
                               <img
-                                src={connectionreq.src}
+                                src={connectionhugicon.src}
                                 alt="connection requests"
                                 width={98}
                                 height={98}
@@ -359,9 +359,9 @@ function Home() {
                         <div className="media">
                           <div className="img-block">
                             <picture>
-                              <source srcSet={metaicon2} />
+                              <source srcSet={metaicon2.src} />
                               <img
-                                src={metaicon2}
+                                src={metaicon2.src}
                                 alt="Meta connection"
                                 width={98}
                                 height={98}
@@ -383,9 +383,9 @@ function Home() {
                         <div className="media">
                           <div className="img-block">
                             <picture>
-                              <source srcSet={connectionreq.src} />
+                              <source srcSet={expandconnecticon.src} />
                               <img
-                                src={connectionreq.src}
+                                src={expandconnecticon.src}
                                 alt="Expand connection"
                                 width={98}
                                 height={98}
